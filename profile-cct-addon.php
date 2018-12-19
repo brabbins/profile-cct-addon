@@ -43,7 +43,7 @@ class Profile_CCT_Addon {
 		if ( array_key_exists( 'ao_use_taxall' , $profile->settings['archive'] ) ) {
 			$this->extratax = $profile->settings['archive']['ao_use_taxall'][0];
 		}
-		ini_set( 'display_errors', 'On' );
+		//ini_set( 'display_errors', 'On' );
 		$this->setup_constants();
 		$this->includes();
 		add_filter( 'get_the_excerpt', array( &$this, 'edit_content' ) );
